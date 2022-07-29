@@ -1,0 +1,7 @@
+{
+    "name": "my Portfolio",
+    "short_name": "my Portfolio",
+    "start_url": ".",
+    "theme_color": "#319197",
+    "display": "standalone"
+}
