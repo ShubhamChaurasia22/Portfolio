@@ -70,6 +70,17 @@ let swiper = new Swiper(".project__container", {
     },
 });
 
+/*==================== QUALIFICATION  ====================*/
+// const qualification = document.querySelector('.quali').addEventListener("click", ()=>{
+//     qualification.style.display = 'none';
+//     document.querySelector('.work').style.display = 'block';
+// });
+
+// const qualification_work = document.querySelector('.quali').addEventListener("click", ()=>{
+//     qualification.style.display = 'none';
+//     document.querySelector('.work').style.display = 'block';
+// });
+
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
 

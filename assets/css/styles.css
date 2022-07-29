@@ -585,6 +585,14 @@ img{
     transform: translate(6px, -7px);
 }
 
+.quali {
+    display: block;
+}
+
+.work {
+    display: none;
+}
+
 /*==================== CERTIFICATE ====================*/
 .certificate__container{
     gap: 1.5rem;
