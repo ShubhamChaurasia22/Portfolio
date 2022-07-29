@@ -9,7 +9,8 @@
         {
             "src": "https://cdn3.iconfinder.com/data/icons/remixicon-development/24/code-s-slash-line-256.png",
             "sizes": "192x192",
-            "type": "image/png"
+            "type": "image/png",
+            "purpose": "maskable"
         },
         {
             "src": "https://cdn3.iconfinder.com/data/icons/remixicon-development/24/code-s-slash-line-256.png",
