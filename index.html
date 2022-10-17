@@ -157,7 +157,7 @@
                 <span class="section__subtitle">My Technical Level</span>
                 <div class="skills__container container grid">
                     
-                        <div class="skills__content skills__open">
+                        <div class="skills__content skills__close">
                             <div class="skills__header">
                                 <i class="uil uil-react skills__icon" skills__icon></i>
                                 <div>
@@ -186,7 +186,7 @@
                                 </div>
                                 <div class="skills__data">
                                     <div class="skills__title">
-                                        <h3 class="skills__name">JavaScript</h3>
+                                        <h3 class="skills__name">Client Side JavaScript</h3>
                                         <span class="skills__number">60%</span>
                                     </div>
                                     <div class="skills__bar">
@@ -225,7 +225,7 @@
 
                         <div class="skills__content skills__close">
                             <div class="skills__header">
-                                <i class="uil uil-server-alt skills__icon"></i>
+                                <i class="uil uil-brackets-curly skills__icon"></i>
                                 <div>
                                     <h1 class="skills__title">Backend</h1>
                                 </div>
@@ -309,6 +309,27 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-database-alt skills__icon"></i>
+                                <div>
+                                    <h1 class="skills__title">Tools</h1>
+                                </div>
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__title">
+                                        <h3 class="skills__name">Business Manager</h3>
+                                        <span class="skills__number">70%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__BM"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     
                 </div>
             </section>
@@ -320,13 +341,19 @@
 
                 <div class="qualification__container container">
                     <div class="qualification__tabs">
-                        <div class="qualification__button button--flex">
+                        <div class="qualification__button button--flex qualification_active" data-target="#education">
                             <i class="uil uil-graduation-cap qualification__icon"></i>
                             Education
                         </div>
+
+                        <div class="qualification__button button--flex" data-target="#work">
+                            <i class="uil uil-bag-alt qualification__icon"></i>
+                            Work
+                        </div>
                     </div>
                     <div class="qualification__sections">
-                        <div class="qualification__content quali">
+                        <!--==================== QUALIFICATION CONTENT 1 ====================-->
+                        <div class="qualification__content qualification_active" data-content id="education">
                             <!--==================== QUALIFICATION 1 ====================-->
                             <div class="qualification__data">
                                 <div>
@@ -334,7 +361,7 @@
                                     <span class="qualification__subtitle">O.S.V.N. Inter College, Kanpur</span>
                                     <div class="qualification__calendar">
                                         <i class="uil uil-calendar-alt"></i>
-                                        2013-2014
+                                        2013 - 2014
                                     </div>
                                 </div>
 
@@ -355,7 +382,7 @@
                                     <span class="qualification__subtitle">O.S.V.N. Inter College, Kanpur</span>
                                     <div class="qualification__calendar">
                                         <i class="uil uil-calendar-alt"></i>
-                                        2015-2016
+                                        2015 - 2016
                                     </div>
                                 </div>
                             </div>
@@ -366,7 +393,7 @@
                                     <span class="qualification__subtitle">Dr Virendra Swarup Institute of Computer Studies, Kanpur</span>
                                     <div class="qualification__calendar">
                                         <i class="uil uil-calendar-alt"></i>
-                                        2017-2020
+                                        2017 - 2020
                                     </div>
                                 </div>
 
@@ -387,7 +414,41 @@
                                     <span class="qualification__subtitle">Banaras Hindu University, Varanasi</span>
                                     <div class="qualification__calendar">
                                         <i class="uil uil-calendar-alt"></i>
-                                        2020-2022
+                                        2020 - 2022
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--==================== QUALIFICATION CONTENT 2 ====================-->
+                        <div class="qualification__content" data-content id="work">
+                            <!--==================== QUALIFICATION 1 ====================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">SFCC Intern</h3>
+                                    <span class="qualification__subtitle">MERKLE, A Denstu Company</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        January, 2022 - July, 2022
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+                            <!--==================== QUALIFICATION 2 ====================-->
+                            <div class="qualification__data">
+                                <div></div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                </div>
+                                <div>
+                                    <h3 class="qualification__title">SFCC Trainee Developer</h3>
+                                    <span class="qualification__subtitle">MERKLE, A Denstu Company</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        August, 2022 - Present
                                     </div>
                                 </div>
                             </div>
@@ -601,7 +662,7 @@
                 <div class="footer__container container grid">
                     <div>
                         <h1 class="footer__title">Shubham</h1>
-                        <span class="footer__subtitle">Fresher</span>
+                        <span class="footer__subtitle">SFCC Trainee Developer</span>
                     </div>
                     <ul class="footer__links">
                         <li>
@@ -611,7 +672,7 @@
                             <a href="#project" class="footer__link">Project</a>
                         </li>
                         <li>
-                            <a href="#contact" class="footer__link">Contact Me</a>
+                            <a href="#contact" class="footer__link">ContactMe</a>
                         </li>
                     </ul>
 
@@ -626,7 +687,7 @@
                             <i class="uil uil-instagram"></i>
                         </a>
                     </div>
-                    <p class="footer__copy">&#169; Shubham, All right reserved.</p>
+                    <p class="footer__copy">&#169;Shubham, All right reserved.</p>
                 </div>
             </div>
             

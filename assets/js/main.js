@@ -21,7 +21,7 @@ if(navClose){
 
 /* Typing Animation */
 var typed = new Typed(".typing",{
-    strings: ["Student", "Coder", "Memer", "Gamer", "Web Developer", "Learner", "Student"],
+    strings: ["Coder", "Memer", "Gamer", "Web Developer", "Learner", "Employee"],
     typeSpeed:300,
     BackSpeed:80,
     loop:true
@@ -71,15 +71,24 @@ let swiper = new Swiper(".project__container", {
 });
 
 /*==================== QUALIFICATION  ====================*/
-// const qualification = document.querySelector('.quali').addEventListener("click", ()=>{
-//     qualification.style.display = 'none';
-//     document.querySelector('.work').style.display = 'block';
-// });
+const tabs = document.querySelectorAll('[data-target]'),
+    tabContents = document.querySelectorAll('[data-content]')
 
-// const qualification_work = document.querySelector('.quali').addEventListener("click", ()=>{
-//     qualification.style.display = 'none';
-//     document.querySelector('.work').style.display = 'block';
-// });
+tabs.forEach(tab => {
+    tab.addEventListener("click", ()=>{
+        const target = document.querySelector(tab.dataset.target);
+
+        tabContents.forEach(tabContent => {
+            tabContent.classList.remove('qualification_active');
+        });
+        target.classList.add('qualification_active');
+
+        tabs.forEach(tab => {
+            tab.classList.remove('qualification_active');
+        });
+        tab.classList.add('qualification_active');
+    });
+});
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')

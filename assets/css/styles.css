@@ -7,7 +7,7 @@
 
     /*========== Colors ==========*/
     /* Change favorite color */
-    --hue-color: 133; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    --hue-color: 553; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
     --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -512,6 +512,10 @@ img{
     width: 60%;
 }
 
+.skills__BM{
+    width: 60%;
+}
+
 .skills__close .skills__list{
     height: 0;
     overflow: hidden;
@@ -585,12 +589,16 @@ img{
     transform: translate(6px, -7px);
 }
 
-.quali {
+.qualification [data-content] {
+    display: none;
+}
+
+.qualification_active[data-content] {
     display: block;
 }
 
-.work {
-    display: none;
+.qualification__button.qualification_active {
+    color: var(--first-color);
 }
 
 /*==================== CERTIFICATE ====================*/
