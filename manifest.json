@@ -5,6 +5,19 @@
     "background_color": "#000",
     "theme_color": "#319197",
     "display": "standalone",
+    "shortcuts": [
+        {
+            "name": "Activity Feed",
+            "short_name": "Feed",
+            "description": "View the activity feed",
+            "url": "/feed?utm_source=homescreen",
+            "icons": [{
+                "src": "https://cdn3.iconfinder.com/data/icons/remixicon-development/24/code-s-slash-line-256.png",
+                "sizes": "192x192",
+                "type": "image/png"
+            }]
+        }
+    ],
     "icons": [
         {
             "src": "https://cdn3.iconfinder.com/data/icons/remixicon-development/24/code-s-slash-line-256.png",
