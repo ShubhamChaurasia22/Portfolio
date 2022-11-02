@@ -156,3 +156,45 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+// Geolocation
+// var ip, country, city, zip, timezone, lat, lon;
+
+// fetch('http://ip-api.com/json/?fields=61439')
+// .then((res) => res.json())
+// .then((res) => {
+//     ip = res.query;
+//     country = res.country;
+//     city = res.city;
+//     zip = res.zip;
+//     timezone = res.timezone;
+//     lat = res.lat;
+//     lon = res.lon;
+//     console.log(ip + ', '+ country + ', '+ city + ', '+ zip + ', '+ timezone + ', '+ lat + ', '+ lon);
+//     const location = ip + ', '+ country + ', '+ city + ', '+ zip + ', '+ timezone + ', '+ lat + ', '+ lon;
+//     console.log(location);
+// })
+
+function sendMail() {
+    var params = {
+        name: document.getElementById("name").value ,
+        subject: document.getElementById("subject").value ,
+        message: document.getElementById("message").value ,
+        contact: document.getElementById("contact").value ,
+        email: document.getElementById("email").value ,
+        // location: JSON.stringify(location),
+    };
+    const serviceID = "service_0i3skde";
+    const templateID = "template_6n90anj";
+
+    emailjs.send(serviceID, templateID, params)
+        .then((res) => {
+            document.getElementById("name").value = "";
+            document.getElementById("subject").value = "";
+            document.getElementById("message").value = "";
+            document.getElementById("contact").value = "";
+            document.getElementById("email").value = "";
+            // document.getElementById("location").value = ``;
+        })
+        .catch((e) => console.log(e));
+}

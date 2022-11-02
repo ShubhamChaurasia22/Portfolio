@@ -22,6 +22,14 @@
         <!--==================== manifest PWA ====================-->
         <link rel="manifest" href="./manifest.json">
 
+        <!--==================== EMAIL JS ====================-->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init("alOyrcgAlRDOw2Jt-");
+            })();
+        </script>
+
         <title>Portfolio</title>
     </head>
     <body>
@@ -638,36 +646,40 @@
 
                     </div>
 
-                    <form action="https://formspree.io/f/mjvlkqln" method="POST" class="contact__form grid">
+                    <div class="contact__form grid">
                         <div class="contact__inputs grid">
                             <div class="contact__content">
-                                <label for="" class="contact__label">Name</label>
-                                <input type="text" name="Name" class="contact__input" required>
+                                <label for="name" class="contact__label">Name</label>
+                                <input type="text" name="Name" class="contact__input" id="name" required>
                             </div>
 
                             <div class="contact__content">
-                                <label for="" class="contact__label">Email</label>
-                                <input type="email" name="Email" class="contact__input" required>
+                                <label for="email" class="contact__label">Email</label>
+                                <input type="email" name="Email" class="contact__input" id="email" required>
                             </div>
                         </div>
                         <div class="contact__content">
-                            <label for="" class="contact__label">Subject</label>
-                            <input type="text" name="Subject" class="contact__input">
+                            <label for="subject" class="contact__label">Subject</label>
+                            <input type="text" name="Subject" class="contact__input" id="subject">
+                        </div>
+                        <div class="contact__content d-none">
+                            <label for="location" class="contact__label">Location</label>
+                            <input type="text" name="Location" class="contact__input" id="location">
                         </div>
                         <div class="contact__content">
-                            <label for="" class="contact__label">Message</label>
-                            <textarea name="Message" id="" cols="0" rows="7" class="contact__input"></textarea>
+                            <label for="message" class="contact__label">Message</label>
+                            <textarea name="Message" cols="0" rows="7" class="contact__input" id="message"></textarea>
                         </div>
 
                         <div>
                             
-                                <button type="submit" class="button button--flex contact__btn">
+                                <button type="submit" class="button button--flex contact__btn" onclick="sendMail()">
                                 Send Message 
                                 <i class="uil uil-message button__icon contact__btn__icon"></i>
                                 </button>
                             
                         </div>
-                    </form>
+                    </div>
                 </div>
             </section>
         </main>
