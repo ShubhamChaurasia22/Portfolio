@@ -180,7 +180,7 @@ function sendMail() {
         name: document.getElementById("name").value ,
         subject: document.getElementById("subject").value ,
         message: document.getElementById("message").value ,
-        contact: document.getElementById("contact").value ,
+        contact: document.getElementById("contactme").value ,
         email: document.getElementById("email").value ,
         // location: JSON.stringify(location),
     };
@@ -192,7 +192,7 @@ function sendMail() {
             document.getElementById("name").value = "";
             document.getElementById("subject").value = "";
             document.getElementById("message").value = "";
-            document.getElementById("contact").value = "";
+            document.getElementById("contactme").value = "";
             document.getElementById("email").value = "";
             // document.getElementById("location").value = ``;
         })
